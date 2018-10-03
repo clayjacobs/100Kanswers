@@ -1,2 +1,183 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<head>
+  <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>6for4 - Homepage</title>
+
+</head>
+
+	<body data-spy="scroll" data-target=".header" data-offset="50">
+		<!-- header section start -->
+		<header class="header">
+			<div class="container">
+				<div class="row flexbox-center">
+					<div class="col-lg-2 col-md-3 col-6">
+						<div class="logo">
+							<a href="#home"><%= image_tag "logo.png" %></a>
+						</div>
+					</div>
+					<div class="col-lg-10 col-md-9 col-6">
+						<div class="responsive-menu"></div>
+					    <div class="mainmenu">
+                            <ul id="primary-menu">
+                                <li><a class="nav-link active" href="#home">Home</a></li>
+                                <li><a class="nav-link" href="#feature">About</a></li>
+                                <li><a class="nav-link" href="#screenshot">How it Works</a></li>
+                                <!--<li><a class="nav-link" href="#pricing">Pricing</a></li>-->
+                                <li><a class="nav-link" href="#team">Company</a></li>
+                                <li><a class="nav-link" href="#contact">Contact Us</a></li>
+                                <li><a class="appao-btn" href="#">Login</a></li>
+                            </ul>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</header><!-- header section end -->
+		<!-- hero area start -->
+		<section class="hero-area" id="home">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="hero-area-content">
+							<h1>Earn real money when you have a few minutes</h1>
+							<p>If you qualify as a High Income Individual (>$100k per year) you can earn $6 for 4 minutes of your time by answering questions from our partners. Plus everybody can earn for referring friends to us!</p>
+							<a href="/signup" class="appao-btn">Register</a>
+							<a href="#" class="appao-btn">Login</a>
+						</div>
+					</div>
+					<div class="col-lg-5">
+					    <div class="hand-mockup text-lg-left text-center">
+							<%= image_tag "hand-mockup.png" %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- hero area end -->
+		<!-- about section start -->
+		<section class="about-area ptb-90">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+					    <div class="sec-title">
+							<h2>About Prantokon<span class="sec-title-border"><span></span><span></span><span></span></span></h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+					    <div class="single-about-box">
+							<i class="icofont icofont-money"></i>
+							<h4>Responsive Design</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+					    <div class="single-about-box active">
+							<i class="icofont icofont-shield"></i>
+							<h4>Fast Performance</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+					    <div class="single-about-box">
+							<i class="icofont icofont-clock-time"></i>
+							<h4>Cross Platfrom</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- about section end -->
+		
+		<!-- showcase section start -->
+		<section class="showcase-area ptb-90">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+					    <div class="sec-title">
+							<h2>Showcase<span class="sec-title-border"><span></span><span></span><span></span></span></h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+						</div>
+					</div>
+				</div>
+				<div class="row flexbox-center">
+					<div class="col-lg-6">
+						<div class="single-showcase-box">
+							<h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi ut aliquip </p>
+							<a href="#" class="appao-btn appao-btn2">Read More</a>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="single-showcase-box">
+							<%= image_tag "showcase.png" %>
+						</div>
+					</div>
+				</div>
+				<div class="row flexbox-center">
+					<div class="col-lg-6">
+						<div class="single-showcase-box">
+							<%= image_tag "showcase2.png" %>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="single-showcase-box">
+							<h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi ut aliquip </p>
+							<a href="#" class="appao-btn appao-btn2">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="row flexbox-center">
+					<div class="col-lg-6">
+						<div class="single-showcase-box">
+							<h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi ut aliquip </p>
+							<a href="#" class="appao-btn appao-btn2">Read More</a>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="single-showcase-box">
+							<%= image_tag "showcase.png" %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- showcase section end -->
+		<!-- footer section start -->
+		<footer class="footer" id="contact">
+			<div class="container">
+				<div class="row">
+                    <div class="col-lg-12">
+						<div class="subscribe-form">
+							<form action="#">
+								<input type="text" placeholder="Your email address here">
+								<button type="submit">Subcribe</button>
+							</form>
+						</div>
+                    </div>
+				</div>
+				<div class="row">
+                    <div class="col-lg-12">
+						<div class="copyright-area">
+							<ul>
+								<li><a href="#"><i class="icofont icofont-social-facebook"></i></a></li>
+								<li><a href="#"><i class="icofont icofont-social-twitter"></i></a></li>
+								<li><a href="#"><i class="icofont icofont-brand-linkedin"></i></a></li>
+								<li><a href="#"><i class="icofont icofont-social-pinterest"></i></a></li>
+								<li><a href="#"><i class="icofont icofont-social-google-plus"></i></a></li>
+							</ul>
+							<p>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Base template by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </p>
+						</div>
+                    </div>
+				</div>
+			</div>
+		</footer><!-- footer section end -->
+		<a href="#" class="scrollToTop">
+			<i class="icofont icofont-arrow-up"></i>
+		</a>
+		
+	</body>
