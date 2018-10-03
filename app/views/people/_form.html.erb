@@ -1,0 +1,59 @@
+<%= bootstrap_form_for(@person) do |f| %>
+  <div class="container" style="height: 35px;">
+    
+    <div class="row">
+      <div class="col-sm-4">
+        <%= f.text_field :firstname, label: "First Name" %>
+      </div>
+      <div class="col-sm-4">
+        <%= f.text_field :lastname, label: "Last Name" %>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-4">
+        <%= f.date_select :birthday, label: "Birthday", :start_year=>1900, :end_year=>2018 %>
+      </div>
+      <div class="col-sm-4">
+        <%= f.select :state, Person:: STATES, { label: "State", :prompt => "Select a State" }, { class: "selectpicker",  wrapper: {class: 'has-warning', data: { foo: 'bar' } } } %>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-8">
+        <%= f.email_field :email %>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-4">
+        <%= f.select :education, Person:: EDUCATION, { label: "Education Level", :prompt => "-" }, { class: "selectpicker",  wrapper: { class: 'has-warning', data: { foo: 'bar' } } } %>
+      </div>
+      <div class="col-sm-4">
+        <%= f.select :gender, Person:: GENDER, { label: "Gender", :prompt => "-" }, { class: "selectpicker",  wrapper: { class: 'has-warning', data: { foo: 'bar' } } } %>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-8">
+        <%= f.select :job, Person:: JOBS, { label: "Primary Job Function", :prompt => "-" }, { class: "selectpicker",  wrapper: { class: 'has-warning', data: { foo: 'bar' } } } %>
+      </div>
+    </div>
+    
+    <div>
+      <div class="row">
+        <div class="col-sm-4">
+          <%= f.select :marital, Person:: MARITAL, { label: "Marital Status", :prompt => "-" }, { class: "selectpicker",  wrapper: { class: 'has-warning', data: { foo: 'bar' } } } %>
+        </div>
+        <div class="col-sm-4">
+          <%= f.select :children, Person:: CHILDREN, { label: "Parental Status", :prompt => "-" }, { class: "selectpicker",  wrapper: { class: 'has-warning', data: { foo: 'bar' } } } %>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <%= f.submit "Create Account" %>
+    </div>
+    
+  </div>
+<% end %>

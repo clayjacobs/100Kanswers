@@ -1,0 +1,41 @@
+<head>
+  <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>6for4 - Signup</title>
+</head>
+
+<body data-spy="scroll" data-target=".header" data-offset="50">
+  <!-- header section start -->
+		<header class="header">
+			<div class="container">
+				<div class="row flexbox-center">
+					<div class="col-lg-2 col-md-3 col-6">
+						<div class="logo">
+							<a href="#home"><%= image_tag "logo.png" %></a>
+						</div>
+					</div>
+					<div class="col-lg-10 col-md-9 col-6">
+						<div class="responsive-menu"></div>
+					    <div class="mainmenu">
+                            <ul id="primary-menu">
+                                <li><a class="nav-link active" href="/home">Home</a></li>
+                                <li><a class="nav-link" href="#feature">About</a></li>
+                                <li><a class="nav-link" href="#screenshot">How it Works</a></li>
+                                <!--<li><a class="nav-link" href="#pricing">Pricing</a></li>-->
+                                <li><a class="nav-link" href="#team">Company</a></li>
+                                <li><a class="nav-link" href="#contact">Contact Us</a></li>
+                                <li><a class="appao-btn" href="#">Login</a></li>
+                            </ul>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</header><!-- header section end -->
+		
+	<!-- FORM RENDER -->	
+  <div style="margin-left:25%; padding-top: 100px;">
+    <h1>Create Account</h1><br>
+    <%= render 'form', person: @person %>
+  </div>
+</body>

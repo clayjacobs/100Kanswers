@@ -1,0 +1,72 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :firstname %>
+    <%= form.text_field :firstname, id: :user_firstname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lastname %>
+    <%= form.text_field :lastname, id: :user_lastname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birthday %>
+    <%= form.date_select :birthday, id: :user_birthday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :user_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.text_field :state, id: :user_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.text_field :gender, id: :user_gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :education %>
+    <%= form.text_field :education, id: :user_education %>
+  </div>
+
+  <div class="field">
+    <%= form.label :marital %>
+    <%= form.text_field :marital, id: :user_marital %>
+  </div>
+
+  <div class="field">
+    <%= form.label :children %>
+    <%= form.text_field :children, id: :user_children %>
+  </div>
+
+  <div class="field">
+    <%= form.label :job %>
+    <%= form.text_field :job, id: :user_job %>
+  </div>
+
+  <div class="field">
+    <%= form.label :income %>
+    <%= form.text_field :income, id: :user_income %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
